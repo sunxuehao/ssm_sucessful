@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.sun.dao.Sun_UserDao">
+    <sql id="userField">
+        a.id as "id",
+        a.name as "name",
+        a.password as "password"
+    </sql>
+    <!--获取所有用户-->
+    <!--id属性值与dao接口中的方法名一一对应-->
+    <select id="findAll" resultType="cn.sun.pojo.Sun_User">
+        select
+        <include refid="userField"/>
+        from sun_user as a
+    </select>
+
+</mapper>
