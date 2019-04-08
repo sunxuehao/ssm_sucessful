@@ -24,8 +24,8 @@ public class Sun_UserServiceImpl implements Sun_UserService {
     }
 
     @Override
-    public int insert(Sun_User sun_user) {
-        return sun_userDao.insert(sun_user);
+    public void insert(Sun_User sun_user) {
+        sun_userDao.insert(sun_user);
     }
 
 }

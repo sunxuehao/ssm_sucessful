@@ -11,7 +11,7 @@
     <title>Title</title>
 </head>
 <body>
-<form>
+<form method="post" action="/ssm_war_exploded/user/insert">
     <table>
         <tr>
             <td>姓名：</td>

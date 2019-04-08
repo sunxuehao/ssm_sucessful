@@ -12,5 +12,5 @@ public interface Sun_UserDao {
     List<Sun_User> findAll(RowBounds rowBounds);
     List<Sun_User> findAll();
 
-    int insert(Sun_User sun_user);
+    void insert(Sun_User sun_user);
 }

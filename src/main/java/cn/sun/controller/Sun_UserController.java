@@ -52,13 +52,14 @@ public class Sun_UserController {
     }
 
     @PostMapping("/insert")
-    public String insert(@Valid Sun_User sun_user, Model model, Errors errors) {
+    public String insert(@Valid Sun_User sun_user, Model model, BindingResult errors) {
         if (errors.hasErrors()) {
             model.addAttribute("errors", errors);
-            return "errors";
+            System.out.println(asdfasdf);
+            return "error";
         }
 
-        int count = sun_userService.insert(sun_user);
-        return "sucess";
+        sun_userService.insert(sun_user);
+        return "success";
     }
 }
