@@ -14,5 +14,10 @@
         <include refid="userField"/>
         from sun_user as a
     </select>
+    <select id="insert" parameterType="cn.sun.pojo.Sun_User" resultType="java.lang.Integer">
+        insert into sun_user
+        (id,name,password,age)
+        value (#{id},#{name},#{password},#{age});
+    </select>
 
 </mapper>

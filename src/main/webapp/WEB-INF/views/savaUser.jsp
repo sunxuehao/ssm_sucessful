@@ -11,6 +11,22 @@
     <title>Title</title>
 </head>
 <body>
-
+<form>
+    <table>
+        <tr>
+            <td>姓名：</td>
+            <td><input id="name" name="name" type="text"></td>
+        </tr>
+        <tr>
+            <td>密码：</td>
+            <td><input id="password" name="password" type="password"></td>
+        </tr>
+        <tr>
+            <td>年龄：</td>
+            <td><input id="age" name="age" type="text"></td>
+        </tr>
+        <tr><td><input type="submit" value="保存"></td></tr>
+    </table>
+</form>
 </body>
 </html>

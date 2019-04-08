@@ -22,4 +22,10 @@ public class Sun_UserServiceImpl implements Sun_UserService {
     public List<Sun_User> findAll() {
         return sun_userDao.findAll();
     }
+
+    @Override
+    public int insert(Sun_User sun_user) {
+        return sun_userDao.insert(sun_user);
+    }
+
 }
