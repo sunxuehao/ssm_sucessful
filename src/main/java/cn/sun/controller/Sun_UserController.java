@@ -53,9 +53,10 @@ public class Sun_UserController {
 
     @PostMapping("/insert")
     public String insert(@Valid Sun_User sun_user, Model model, BindingResult errors) {
+//        @Valid和bindingresult总是成对出现，bindingresult拓展了Errors接口，同时可以获取数据绑定的结果
         if (errors.hasErrors()) {
-            model.addAttribute("errors", errors);
-            System.out.println(asdfasdf);
+//            model.addAttribute("errors", errors);
+            System.out.println(12312313);
             return "error";
         }
 
