@@ -51,7 +51,4 @@ http://www.springframework.org/schema/context/spring-context-2.5.xsd">
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"></property>
         <property name="basePackage" value="cn.sun.dao"></property>
     </bean>
-
-
-
 </beans>
