@@ -19,6 +19,7 @@
 <div>
     <strong> welcome,${sessionScope.user.username}! </strong>
 </div>
+<%--成功登录之后的页面--%>
 this is success page!
 <a href="/user/anotherpage">点我跳到另一个页面</a>
 
