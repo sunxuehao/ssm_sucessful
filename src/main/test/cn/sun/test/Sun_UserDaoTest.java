@@ -1,7 +1,9 @@
 package cn.sun.test;
 
 import cn.sun.dao.Sun_UserDao;
+import cn.sun.dao.UserDao;
 import cn.sun.pojo.Sun_User;
+import cn.sun.pojo.User;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import org.apache.ibatis.session.RowBounds;
@@ -41,5 +43,14 @@ public class Sun_UserDaoTest extends BaseJunit4Test {
         for (Sun_User sun_user : sun_userList){
             System.out.println(sun_user.getId());
         }
+    }
+
+    @Resource
+    UserDao userDao;
+    @Test
+    public void findbyusername(){
+        User user = userDao.findByUsername("sun");
+        System.out.println("开始");
+        System.out.println(user.getPassword());
     }
 }
